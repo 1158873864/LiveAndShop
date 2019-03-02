@@ -1,0 +1,613 @@
+.agency img {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.agent {
+    background: #11044b;
+    height: auto;
+}
+
+.agent .banner {
+    width: 100%;
+    height: 842px;
+    background: url("../img/agent/agent-banner.png") no-repeat 50%;
+}
+
+.agent .project_introduce {
+    width: 1200px;
+    margin: 0 auto
+}
+
+.agent .project_introduce .project_title {
+    width: 770px;
+    height: 137px;
+    background: url("../img/agent/agent-intro.png") no-repeat;
+    margin: 80px auto 0
+}
+
+.agent .project_introduce .project_contain {
+    width: 1100px;
+    height: 564px;
+    margin: 0 auto;
+    background: url("../img/agent/agent-bginput.png") no-repeat;
+    padding-top: 100px
+}
+
+.agent .project_introduce .project_contain p {
+    width: 880px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #11044b;
+    line-height: 40px;
+    text-indent: 2em
+}
+
+.agent .model .model_title {
+    width: 770px;
+    height: 137px;
+    background: url("../img/agent/agent-method.png") no-repeat;
+    margin: 60px auto 0
+}
+
+.agent .model .model_contain {
+    width: 1270px;
+    height: 2570px;
+    background: url("../img/agent/agent-bglong.png") no-repeat;
+    margin: 30px auto 0;
+    overflow: hidden;
+    position: relative
+}
+
+.agent .model .model_contain .title_one {
+    font-size: 36px;
+    color: #6e6987;
+}
+
+.agent .model .model_contain .title_one {
+    margin-left: 190px;
+    margin-top: 186px
+}
+
+.agent .model .model_contain .title_two {
+    margin-left: 488px;
+    margin-top: 392px
+}
+
+.agent .model .model_contain p {
+    font-size: 18px;
+    color: #6e6987;
+    margin-left: 190px;
+    margin-top: 104px
+}
+
+.agent .model .model_contain ul {
+    font-size: 18px;
+    color: #6e6987;
+    margin-left: 162px;
+    line-height: 34px;
+    position: relative
+}
+
+.agent .model .model_contain ul li {
+    list-style-type: disc;
+    position: absolute;
+    left: 106px;
+    line-height: 30px
+}
+
+.agent .model .model_contain ul li:nth-child(1) {
+    top: 686px
+}
+
+.agent .model .model_contain ul li:nth-child(2) {
+    top: 754px
+}
+
+.agent .model .model_contain ul li:nth-child(3) {
+    top: 1242px
+}
+
+.agent .model .model_contain .ware_one {
+    font-size: 20px;
+    color: #f5e3ff;
+    position: absolute;
+    left: 306px;
+    top: 1876px
+}
+
+.agent .model .model_contain .ware_two {
+    font-size: 20px;
+    color: #f5e3ff;
+    position: absolute;
+    left: 898px;
+    top: 1876px
+}
+
+.agent .plan {
+    width: 1200px;
+    height: auto;
+    margin: 80px auto
+}
+
+.agent .plan .plan_title {
+    width: 770px;
+    height: 137px;
+    background: url("../img/agent/agent-plan.png") no-repeat;
+    margin: 60px auto 0
+}
+
+.agent .plan .partner_done, .agent .plan .plan_numble {
+    width: 1100px;
+    height: 344px;
+    margin: 0 auto;
+    background: url("../img/agent/agent-bginput1.png") no-repeat;
+    overflow: hidden
+}
+
+.agent .plan .partner_done p, .agent .plan .plan_numble p {
+    width: 825px;
+    height: 141px;
+    font-size: 20px;
+    color: #11044b;
+    line-height: 40px;
+    margin-top: 104px;
+    margin-left: 118px
+}
+
+.agent .plan .partner_done {
+    margin-top: -20px
+}
+
+.agent .plan .partner_done .city_partner {
+    font-size: 28px;
+    color: #11044b;
+    width: 1100px;
+    text-align: center;
+    margin-top: 100px
+}
+
+.agent .plan .partner_done p {
+    width: 697px;
+    height: 104px;
+    margin-top: 20px;
+    margin-left: 118px
+}
+
+.agent .plan .partner_earnings {
+    width: 1100px;
+    height: 506px;
+    margin: -20px auto 0;
+    background: url("../img/agent/agent-bginput2.png") no-repeat;
+    position: relative
+}
+
+.agent .plan .partner_earnings span {
+    position: absolute;
+    font-size: 20px;
+    color: #11044b
+}
+
+.agent .plan .partner_earnings .earning_one {
+    left: 254px;
+    top: 116px
+}
+
+.agent .plan .partner_earnings .earning_two {
+    left: 638px;
+    top: 116px
+}
+
+.agent .plan .partner_earnings .earning_three {
+    left: 198px;
+    top: 268px
+}
+
+.agent .plan .partner_earnings .earning_four {
+    left: 696px;
+    top: 268px
+}
+
+.agent .plan .partner_earnings .earning_five {
+    left: 506px;
+    top: 398px
+}
+
+.agent .plan .partner_conditions {
+    width: 1100px;
+    height: 702px;
+    background: url("../img/agent/agent-bginput3.png") no-repeat;
+    margin: -20px auto 0;
+    overflow: hidden;
+    position: relative
+}
+
+.agent .plan .partner_conditions .conditions_title {
+    width: 1100px;
+    text-align: center;
+    margin-top: 104px;
+    font-size: 28px;
+    color: #11044b
+}
+
+.agent .plan .partner_conditions p {
+    font-size: 20px;
+    color: #11044b;
+    line-height: 32px
+}
+
+.agent .plan .partner_conditions .condition_one {
+    width: 260px;
+    height: 50px;
+    margin-left: 234px;
+    margin-top: 26px;
+    text-align: right
+}
+
+.agent .plan .partner_conditions .condition_two {
+    width: 244px;
+    height: 51px;
+    margin-left: 602px;
+    margin-top: 50px;
+    text-align: left
+}
+
+.agent .plan .partner_conditions .condition_three {
+    width: 341px;
+    height: 50px;
+    margin-left: 152px;
+    margin-top: 45px;
+    text-align: right
+}
+
+.agent .plan .partner_conditions .condition_four {
+    width: 260px;
+    height: 50px;
+    margin-left: 600px;
+    margin-top: 45px;
+    text-align: left
+}
+
+.agent .plan .partner_conditions .condition_five {
+    width: 280px;
+    height: 50px;
+    margin-left: 206px;
+    margin-top: 45px;
+    text-align: right
+}
+
+.agent .plan .partner_conditions .contain_one {
+    text-align: center;
+    position: absolute;
+    left: 578px;
+    top: 160px
+}
+
+.agent .plan .partner_conditions .contain_one .box_contain_one {
+    width: 112px;
+    height: 36px;
+    background: #11044b;
+    line-height: 36px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f5e3ff;
+    position: relative
+}
+
+.agent .plan .partner_conditions .contain_one .box_contain_one .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid #11044b;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -4px
+}
+
+.agent .plan .partner_conditions .contain_two {
+    text-align: center;
+    position: absolute;
+    left: 408px;
+    top: 256px
+}
+
+.agent .plan .partner_conditions .contain_two .box_contain_two {
+    width: 112px;
+    height: 36px;
+    background: #11044b;
+    line-height: 36px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f5e3ff;
+    position: relative
+}
+
+.agent .plan .partner_conditions .contain_two .box_contain_two .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #11044b;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    margin-top: -2px
+}
+
+.agent .plan .partner_conditions .contain_three {
+    text-align: center;
+    position: absolute;
+    left: 578px;
+    top: 354px
+}
+
+.agent .plan .partner_conditions .contain_three .box_contain_three {
+    width: 112px;
+    height: 36px;
+    background: #11044b;
+    line-height: 36px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f5e3ff;
+    position: relative
+}
+
+.agent .plan .partner_conditions .contain_three .box_contain_three .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid #11044b;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -4px
+}
+
+.agent .plan .partner_conditions .contain_four {
+    text-align: center;
+    position: absolute;
+    left: 358px;
+    top: 448px
+}
+
+.agent .plan .partner_conditions .contain_four .box_contain_four {
+    width: 164px;
+    height: 36px;
+    background: #11044b;
+    line-height: 36px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f5e3ff;
+    position: relative
+}
+
+.agent .plan .partner_conditions .contain_four .box_contain_four .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #11044b;
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    margin-top: -2px
+}
+
+.agent .plan .partner_conditions .contain_five {
+    text-align: center;
+    position: absolute;
+    left: 578px;
+    top: 546px
+}
+
+.agent .plan .partner_conditions .contain_five .box_contain_five {
+    width: 241px;
+    height: 36px;
+    background: #11044b;
+    line-height: 36px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #f5e3ff;
+    position: relative
+}
+
+.agent .plan .partner_conditions .contain_five .box_contain_five .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 4px solid #11044b;
+    position: absolute;
+    left: -4px;
+    top: 50%;
+    margin-top: -4px
+}
+
+.agent .plan .progress {
+    width: 1100px;
+    height: 305px;
+    margin: -20px auto 0;
+    background: url("../img/agent/agent-bginput4.png") no-repeat;
+    overflow: hidden;
+    position: relative
+}
+
+.agent .plan .progress .progress_title {
+    width: 1100px;
+    font-size: 28px;
+    color: #11044b;
+    text-align: center;
+    margin-top: 100px
+}
+
+.agent .plan .progress .detail_process_show {
+    position: absolute;
+    top: 150px
+}
+
+.agent .plan .progress .detail_process {
+    position: absolute;
+    top: 164px;
+    font-size: 20px;
+    font-family: Helvetica, PingFang SC;
+    color: #f5e3ff
+}
+
+.agent .plan .progress .know_somethings_show {
+    left: 116px
+}
+
+.agent .plan .progress .know_somethings {
+    left: 144px
+}
+
+.agent .plan .progress .chat_somethings_show {
+    left: 238px
+}
+
+.agent .plan .progress .chat_somethings {
+    left: 266px
+}
+
+.agent .plan .progress .inspecte_somethings_show {
+    left: 360px
+}
+
+.agent .plan .progress .inspecte_somethings {
+    left: 388px
+}
+
+.agent .plan .progress .sign_somethings_show {
+    left: 482px
+}
+
+.agent .plan .progress .sign_somethings {
+    left: 510px
+}
+
+.agent .plan .progress .train_somethings_show {
+    left: 604px
+}
+
+.agent .plan .progress .train_somethings {
+    left: 632px
+}
+
+.agent .plan .progress .done_somethings_show {
+    left: 726px
+}
+
+.agent .plan .progress .done_somethings {
+    left: 754px
+}
+
+.agent .plan .progress .earn_somethings_show {
+    left: 848px
+}
+
+.agent .plan .progress .earn_somethings {
+    left: 876px
+}
+
+.agent .consulte_way {
+    width: 1200px;
+    height: 534px;
+    margin: -27px auto 0
+}
+
+.agent .consulte_way .consulte_title {
+    width: 770px;
+    height: 137px;
+    background: url("../img/agent/agent-zixun.png") no-repeat;
+    margin: -20px auto 0
+}
+
+.agent .consulte_way .detail_consulte {
+    width: 1110px;
+    margin: 0 auto
+}
+
+.agent .consulte_way .detail_consulte .detail_way {
+    background: url("../img/agent/agent-bginput5.png") no-repeat;
+    width: 370px;
+    height: 377px;
+    float: left;
+    overflow: hidden
+}
+
+.agent .consulte_way .detail_consulte .phone_consulte {
+    margin-left: 36px
+}
+
+.agent .consulte_way .detail_consulte .phone_consulte img {
+    display: block;
+    width: 40px;
+    height: 47px;
+    margin: 86px auto 33px
+}
+
+.agent .consulte_way .detail_consulte .phone_consulte div {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 17px;
+    color: #11044b
+}
+
+.agent .consulte_way .detail_consulte .phone_consulte p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    color: #11044b
+}
+
+.agent .consulte_way .detail_consulte .wechat_consulte {
+    margin-left: -34px
+}
+
+.agent .consulte_way .detail_consulte .wechat_consulte img {
+    display: block;
+    width: 54px;
+    height: 45px;
+    margin: 86px auto 38px
+}
+
+.agent .consulte_way .detail_consulte .wechat_consulte div {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #11044b
+}
+
+.agent .consulte_way .detail_consulte .wechat_consulte p {
+    font-size: 24px;
+    text-align: center;
+    color: #11044b
+}
+
+.agent .consulte_way .detail_consulte .qq_consulte {
+    margin-left: -34px
+}
+
+.agent .consulte_way .detail_consulte .qq_consulte img {
+    display: block;
+    width: 40px;
+    height: 44px;
+    margin: 86px auto 38px
+}
+
+.agent .consulte_way .detail_consulte .qq_consulte h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #11044b
+}
+
+.agent .consulte_way .detail_consulte .qq_consulte p {
+    font-size: 24px;
+    text-align: center;
+    color: #11044b
+}
+

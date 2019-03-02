@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta name=format-detection content="telephone=no" />
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>红豆角</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/live.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hdj.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			function IsPC() {
+				for(var e = navigator.userAgent, n = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"],
+						t = !0, o = 0; o < n.length; o++)
+					if(e.indexOf(n[o]) > 0) {
+						t = !1;
+						break
+					}
+				return t
+			}
+
+			IsPC() || (window.parent.location.href = "/HDJ_official_phone.html");
+			var _hmt = _hmt || [];
+			! function() {
+				var e = document.createElement("script");
+				e.src = "https://hm.baidu.com/hm.js?8a846d1ce36020ef5fecba4bf355fa06";
+				var n = document.getElementsByTagName("script")[0];
+				n.parentNode.insertBefore(e, n)
+			}();
+			var BASE_URL = "http://api.home.hongdoujiao.com"
+		</script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div class="head"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".head").load("header.html");
+			});
+		</script>
+		<div class=live_banner></div>
+		<div class=live_content>
+			<div class=live_introduce>
+				<p class="h1">什么是直播电商</p>
+				<p class="h3">电商的一种新型表现形式，完美融合直播和店铺，改变了传统电商图文静态展示图片的形态</p>
+				<div class=live_intList>
+					<div>
+						<img alt="直播平台" src="img/live/live-icon1.png" /> 
+						<p class="h3">直播+电商</p>
+						<p>新电商表现形式<br>融合直播与店铺模块，实现新零售场景化</p>
+					</div>
+					<div>
+						<img alt="跨境电商" src="img/live/live-icon2.png" /> 
+						<p class="h3">打破传统</p>
+						<p>改变常规图文静态展示产品的形式<br>让购物更具真实性</p>
+					</div>
+					<div>
+						<img alt="海外代购"  src="img/live/live-icon3.png" /> 
+						<p class="h3">全新体验</p>
+						<p>边看直播边购物<br>新的购物体验，新的生活方式</p>
+					</div>
+				</div>
+			</div>
+			<div class=live_oppor>
+				<p class="h1">直播电商带来的新机遇</p>
+				<p class="h3">电商的一种新型表现形式，完美融合直播和店铺，改变了传统电商图文静态展示图片的形态</p>
+				<div>
+					<div class=list_box>
+						<img alt="电商平台" src="img/live/live-char1.png" />
+						<p>撬动销量</p>
+					</div>
+					<div class=box-content>
+						<p class="h4">结合直播风口，网红经济的出现，店家接入直播，带来高流量入口。</p>
+					</div>
+				</div>
+				<div>
+					<div class=list_box>
+						<img alt="全民直播平台" src="img/live/live-char2.png" />
+						<p>创造新流量入口</p>
+					</div>
+					<div class=box-content>
+						<p class="h4">电商平台的同质化越来越严重，而内容上的差异化能帮助平台更好的获客和实现转化。</p>
+					</div>
+				</div>
+				<div>
+					<div class=list_box>
+						<img alt="电商网站" src="img/live/live-char3.png" />
+						<p>改变消费场景</p>
+					</div>
+					<div class=box-content>
+						<p class="h4">场景化直播，让用户更方便了解产品。</p>
+					</div>
+				</div>
+				<div>
+					<div class=list_box>
+						<img alt="卖东西的网站" src="img/live/live-char4.png" />
+						<p>实时交互刺激消费</p>
+					</div>
+					<div class=box-content>
+						<p class="h4">因观看直播的群体内产生了从众效应，直播能对销售转化大幅度提升。</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class=live_play>
+				<p class="h1">直播电商的玩法</p>
+				<p class="h3">通过实时直播，利用不同的玩法能够有效带动产品的销量</p>
+				<div class=carousel>
+					<img alt="移动电商" class="carousel_left" src="img/live/live-left.png" />
+					<ul>
+						<li class=li1 value=1>
+							<img alt="海外代购网站" src="img/live/live-show1.png" />
+							<div class=text_hide>
+								<p class="h3">专题促销</p>
+								<p>利用内容取胜，服务用户的时候刺激用户购买欲望。</p>
+							</div>
+						</li>
+						<li class="active li2" value=2>
+							<img alt="直播电商" src="img/live/live-show2.png" />
+							<div class="text_hide text_show">
+								<p class="h3">与网红合作</p>
+								<p>有效的利用网红经济变现</p>
+							</div>
+						</li>
+						<li class=li3 value=3>
+							<img alt="网络视频直播平台" src="img/live/live-show3.png" />
+							<div class=text_hide>
+								<p class="h3">线上线下同步</p>
+								<p>大型线下活动，结合线上直播，实现跨区域限制。</p>
+							</div>
+						</li>
+						<li class=li4 value=4>
+							<img alt="新电商" src="img/live/live-show4.png" />
+							<div class=text_hide>
+								<p class="h3">实时促销</p>
+								<p>可以实时交互活动，如打折，优惠，免单。 </p>
+							</div>
+						</li>
+					</ul>
+					<img alt="移动电商" class="carousel_right" src="img/live/live-right.png" /> 
+				</div>
+			</div>
+		</div>
+		
+		<div class=live_offline>
+			<div class=offline_box>
+				<canvas id=can1 width=1000 height=680></canvas>
+				<img alt="购物直播" src="img/live/live-line.png" />
+				<div class=box_center>
+					<img alt="直播卖货" src="img/live/live-line1.png" />
+					<p class="h3">线下活动</p>
+					<p>线下同步线上，传播范围更广</p>
+				</div>
+				<div class=box_lt>
+					<img alt="直播电商平台" src="img/live/live-line2.png" />
+					<p class="h3">线下实体店</p>
+					<p>突破地域限制，打通线上线下</p>
+				</div>
+				<div class=box_lb>
+					<img alt="购物app" src="img/live/live-line3.png" />
+					<p class="h3">电商主体</p>
+					<p>打造场景化购物，实现边看边买</p>
+				</div>
+				<div class=box_rt>
+					<p>
+						<img alt="直播app" src="img/live/live-line4.png" />
+					</p>
+					<p class="h3">优质内容主体</p>
+					<p>自带粉丝，有效产生变现</p>
+				</div>
+				<div class=box_rb>
+					<p>
+						<img alt="微电商" src="img/live/live-line5.png" />
+					<p class="h3">体验类产品</p>
+					<p>家居，汽车等，足不出户即可体验</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class=live_future>
+			<div class=future_box>
+				<p class="h1">直播电商的未来</p>
+				<div>
+					<img alt="红豆角直播" src="img/live/live-future1.png" />
+					<p class="h3">人人都主播</p>
+					<p>随着直播电商的兴起<br>准入门槛越来越低<br>再小的个体也是品牌</p>
+				</div>
+				<div>
+					<img alt="红豆角" src="img/live/live-future2.png" />
+					<p class="h3">直播内容优胜劣汰</p>
+					<p>打造符合自身产品内容的直播<br>吸引用户,输出产品</p>
+				</div>
+				<div>
+					<img alt="电商直播app" src="img/live/live-future3.png" />
+					<p class="h3">为新零售赋能</p>
+					<p>直播电商是未来的必将趋势<br>无论怎么发展变化<br>直播电商会越来越受欢迎</p>
+				</div>
+				<div>
+					<img alt="直播平台" src="img/live/live-future4.png" />
+					<p class="h3">直播电商平台化</p>
+					<p>随着直播的流行<br>新的直播平台会兴起<br>红豆角将会努力打造一款<br>直播平台</p>
+				</div>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="foot"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".foot").load("footer.html");
+			});
+		</script>		
+	<script type="text/javascript" src="js/live.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=format-detection content="telephone=no"/>
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>红豆角</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+    	function IsPC() {
+	        for (var e = navigator.userAgent, n = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"],
+	                 t = !0, o = 0; o < n.length; o++) if (e.indexOf(n[o]) > 0) {
+	            t = !1;
+	            break
+	        }
+	        return t
+	    }
+
+	    IsPC() || (window.parent.location.href = "/HDJ_official_phone.html");
+	    var _hmt = _hmt || [];
+	    !function () {
+	        var e = document.createElement("script");
+	        e.src = "https://hm.baidu.com/hm.js?8a846d1ce36020ef5fecba4bf355fa06";
+	        var n = document.getElementsByTagName("script")[0];
+	        n.parentNode.insertBefore(e, n)
+	    }();
+	    var BASE_URL = "http://api.home.hongdoujiao.com"
+    </script>
+</head>
+<body>
+	<!--头部导航-->
+	<div class="head"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $(".head").load("header.html");
+		});
+	</script>
+	
+	<div class="index">
+		
+		<!--index-banner-->
+	    <div class="index-banner">
+	        <div class="index-banner-div swiper_1">
+	        	<img alt="卖东西的网站" class="banner_pic" src="img/index/index-bg.png">
+	            <div class="mask"></div>
+	            <div class="banner-content">
+	            	<p class="banner-title">
+	                	<span>开直播店铺</span>
+	                	<span>就上红豆角</span></p> 
+	                </p>
+	                <p class="h1">
+	                	<span>红豆角直播</span>
+	                	<span>新零售实践者</span></p> 
+	                	<a class="banner-button" href="">立即免费开店</a>
+	                </p>
+	                <div class="banner-line">
+	                	<img alt="海外代购网站" src="img/index/index-star.png"/>
+	                    <span>已经有<b>100000</b><sup>+</sup>商户使用</span>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	    <!--右边侧栏-->
+	    <div class="sideBar">
+	    	<a class="animated" href="" target="_blank">
+	        	<img alt="网络视频直播平台" src="img/index/sideBar-qq.png" style="width:24px; height:24px;">
+	    	</a> 
+	    	<span>在线客服</span>
+	        <figure id="index-tel" class="index-tel">
+	        	<img alt="新电商" src="img/index/sideBar-phone.png" style="width:23px; height:23px;">
+	            <div class="index-tel-number">0571-86350599</ div>
+	        </figure>
+	        <figure id="index-code" class="index-code">
+	        	<img alt="购物直播" src="img/index/sideBar-card.png" style="width:24px; height:24px;"> 
+	            <div class="index-code-img">
+	            	<img alt="直播卖货" src="img/index/sideBar-wechat.jpg"> 
+	            	<h4>扫描下载红豆角APP</h4>
+	            </div>
+	        </figure>
+	        <span id="goTop">官网商城</span>
+	    </div>
+	    
+	    <!--直播-->
+	    <div class="index-block-live">
+	        <div class="comm_container">
+	        	<p class="h1">
+	        		<span class="b_font">一个能直播卖货的APP</span>
+	        	</p>
+	            <p class="h3" class="f_gray">每个人都有千种不同,见证生活的色彩</p>
+	            <div id="listContainer"></div>
+	        </div>
+	    </div>
+	    <script id="liveList" type="text/html">
+		    <dl>
+		        <dt>
+		            <a href="/liveManager.html?spaceId={{top.spaceId}}&liveId={{top.liveInfoes.liveId}}">
+		                <figure>
+		                    <img alt="海外代购" src="{{top.liveInfoes.userHeadUrl}}" alt="">
+		                    <div class="is_living">
+		                        <img src="img/index/living.gif" alt="电商网站">{{top.liveAudiences}}
+		                    </div>
+		                </figure>
+		                <h4 class="ellipsis">{{top.liveInfoes.liveTitle}}</h4>
+		                <div class="username ellipsis"><img src="{{top.liveInfoes.userHeadUrl}}" alt="电商网站">{{top.spaceName}}</div>
+		            </a>
+		        </dt>
+		        {{each list as live i}}
+		        <dd>
+		            <a href="/liveManager.html?spaceId={{live.spaceId}}&liveId={{live.liveInfoes.liveId}}">
+		                <figure>
+		                    <img alt="电商平台" src="{{live.userHeadUrl}}" alt="">
+		                    <div class="is_living">
+		                        <img src="img/index/living.gif" alt="电商网站">{{live.liveAudiences}}
+		                    </div>
+		                </figure>
+		                <h4 class="ellipsis">{{live.liveInfoes.liveTitle}}</h4>
+		                <div class="username ellipsis"><img src="{{live.userHeadUrl}}" alt="电商网站">{{live.spaceName}}</div>
+		            </a>
+		        </dd>
+		        {{/each}}
+		    </dl> 
+	    </script>
+	    
+	    <!--新零售 VR实景店-->
+	    <div class=index_block_2 >
+	        <div class=comm_container>
+	            <div class="comm_pac">
+	                <div class="VR_title"><p class="h1"><span class=b_font>新零售  VR实景店</span></p>
+	                    <p class="h3" class=f_gray>全新体验，足不出户览尽千里、逛遍全球</p>
+	                    <div id=listContainer></div>
+	                </div>
+	                <div class=img_collection>
+	                    <div class="content">
+	                        <div id="div-box">
+	                            <figure>
+	                                <a href="http://livetour.istaging.com.cn/5b2a4e512f301e00352e4aab" target="_blank">
+	                                    <img src="http://vrcam-cn-storage.oss-cn-shanghai.aliyuncs.com/5ab620ecac502e57c94a88ce/panoramas/panorama_1529479718393483_Web.vr.jpg?x-oss-process=image/resize,w_1300" alt="">
+	                                </a>
+	                            </figure>
+	                            <figure>
+	                                <a href="http://livetour.istaging.com.cn/5ad452f69f5454410a2b5acf" target="_blank">
+	                                    <img src="http://vrcam-cn-storage.oss-cn-shanghai.aliyuncs.com/5a728db0fe88c2005c2272b3/panoramas/panorama_1522735561597365_Web.vr.jpg?x-oss-process=image/resize,w_1300" alt="">
+	                                </a>
+	                            </figure>
+	                            <figure>
+	                                <a href="http://livetour.istaging.com.cn/5ad4530044d904005caaae13?from=singlemessage&isappinstalled=0" target="_blank">
+	                                    <img src="http://vrcam-cn-storage.oss-cn-shanghai.aliyuncs.com/5a728db0fe88c2005c2272b3/panoramas/panorama_2muKdZ1Do2.jpg?x-oss-process=image/resize,w_1300" alt="">
+	                                </a>
+	                            </figure>
+	                            <figure>
+	                                <a href="http://livetour.istaging.com.cn/5ad456809f545452c0de9c0a" target="_blank">
+	                                    <img src="http://vrcam-cn-storage.oss-cn-shanghai.aliyuncs.com/5a728db0fe88c2005c2272b3/panoramas/panorama_1522124025077311_Web.vr.jpg?x-oss-process=image/resize,w_1300" alt="">
+	                                </a>
+	                            </figure>
+	                            <figure>
+	                                <a href="http://livetour.istaging.com.cn/5ad45669ac502e003cbf3ce2" target="_blank">
+	                                    <img src="http://vrcam-cn-storage.oss-cn-shanghai.aliyuncs.com/5a728db0fe88c2005c2272b3/panoramas/panorama_15222017402.jpg?x-oss-process=image/resize,w_1300" alt="">
+	                                </a>
+	                            </figure>
+	                        </div>
+	                        <div class="my_model"></div>
+	                        <div id="indictor" class="index_block_2_bottom_small">
+	                            <button type="button">
+	                                <figure>
+	                                	<img src="http://image.xiaotaotv.com/60/product/4641409/thum/e56d3846a4ce459196cc335370a4d552.jpg" alt="" />
+	                                </figure>
+	                            </button>
+	                            <button type="button">
+	                                <figure>
+	                                	<img src="http://image.xiaotaotv.com/111728/product/3717126/thum/62abd30c9999425f8511658115086155.jpg" alt=""/>
+	                                </figure>
+	                            </button>
+	                            <button type="button" class="active">
+	                            	<figure>
+	                            		<img src="http://image.xiaotaotv.com/111728/product/3717130/thum/ca47d5a2d236483499f8f76ffc868216.jpg" alt="">
+	                            	</figure>
+	                            </button>
+	                            <button type="button">
+	                            	<figure>
+	                            		<img src="http://image.xiaotaotv.com/111728/product/3717132/thum/f975c290fdd84f79916e937a5add8be9.jpg" alt="">
+	                            	</figure>
+	                            </button>
+	                            <button type="button">
+	                            	<figure>
+	                            		<img src="http://image.xiaotaotv.com/111728/product/3717142/thum/6b45e01844d548bfb1eb6947b4a89e20.jpg" alt="">
+	                            	</figure>
+	                            </button>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="small_font_size">
+	                	<p class="h1">
+	                		<span class=b_font>被誉为“设计师之家”的家具设计中心。</span>
+	                	</p>
+	                    <p class="h3" class=f_gray>地址：赣州市南康区工业大道鸿泰产业园</p>
+	                    <div id=listContainer></div>
+	                </div>
+	                <div class=pointing>
+	                    <img src="img/index/index-shou.png" alt="">
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    
+	   	<!-- 一部手机 一键直播 一点下单-->
+	    <div class=index_block_3>
+	        <div class="live_title">
+	        	<p class="h1">
+	        		<span class=b_font>一部手机 一键直播 一点下单</span>
+	        	</p>
+	            <p class="h3" class=f_gray>人人都能直播卖货，边看边聊就购了</p>
+	            <div id=listContainer></div>
+	        </div>
+	        
+	        <figure>
+	        	<img src="img/index/index-char1.png" alt="红豆角">
+	            <p class="h1">
+	            	<span class=center>实体店的未来</span>
+	            	<span class=middle></span>
+	            </p>
+	            <div class=mes></div>
+	            <div class=content>
+	            	<img alt="直播app" src="img/index/index-icon1.png" width=46 height=46/>
+	                <p class="h2">移动互联网与实体店<br>一体化的智能商店</p>
+	                <p>
+	                	提高用户粘性 <br>
+	                	创造新的流量入口 <br>
+	                	破地域经营局限
+	                </p>
+	            </div>
+	        </figure>
+	        
+	        <figure>
+	        	<img src="img/index/index-char2.png" alt="微电商">
+	            <p class="h1">
+	            	<span class=center>电商的翅膀</span>
+	            	<span class=middle></span>
+	            </p>
+	            <div class=mes></div>
+	            <div class=content>
+	            	<img alt="红豆角直播" src="img/index/index-icon2.png" width=46 height=46>
+	                <p class="h2">
+	                	传统电商商品展现<br>
+	                	更加丰富多样
+	                </p>
+	                <p>
+	                	嫁接网红直播引爆销量 <br>
+	                	改变消费的场景和路径 <br>
+	                	实时强交互刺激冲动消费
+	                </p>
+	            </div>
+	        </figure>
+	        
+	        <figure>
+	        	<img src="img/index/index-char3.png" alt="红豆角">
+	            <p class="h1">
+	            	<span class=center>海外的代购</span>
+	            	<span class=middle></span>
+	            </p>
+	            <div class=mes></div>
+	            <div class=content>
+	            	<img alt="电商直播app" src="img/index/index-icon3.png" width=40 height=46>
+	                <p class="h2">代购直播增强受众信任感</p>
+	                <p>
+	                	有效解决信任缺失 <br>
+	                	实时直播带动粉丝经济 <br>
+	                	品牌商一起策划直播内容
+	                </p>
+	            </div>
+	        </figure>
+	        
+	        <figure>
+	        	<img src="img/index/index-char4.png" alt="直播平台">
+	            <p class="h1">
+	            	<span class=center>潮牌的发布</span>
+	            	<span class=middle></span>
+	            </p>
+	            <div class=mes></div>
+	            <div class=content>
+	            	<img alt="跨境电商" src="img/index/index-icon4.png" width=52 height=32>
+	                <p class="h2">直播发布会扩大品牌影响力</p>
+	                <p>
+	                	扩大品牌受众群体 <br>
+	                	粉丝实时在线交流 <br>
+	                	新品同步在线销售
+	                </p>
+	            </div>
+	        </figure>
+	    </div>
+	    
+	   	<!-- 全新电商直播模式-->
+	    <div class="index_block_4 comm_container">
+	    	<p class="h1" animation=0.3>
+	    		<span>全新电商直播模式</span> 
+	    		<span class=no_margin>更广的销售半径</span>
+	    	</p>
+	        <p class="h3" class=f_gray>多流量入口分享，最短路劲O2O互动</p>
+	            
+	        <div class="fl col_1">
+	            <figure>
+	            	<img alt="海外代购" src="img/index/index-class1.png"/>
+	            	<p class="h3">红豆角APP</p>
+	            </figure>
+	            
+	            <figure>
+	            	<img alt="电商平台"src="img/index/index-class2.png"/>
+	            	<p class="h3">线下实体店</p>
+	            </figure>
+	            
+	            <figure>
+	            	<img alt="全民直播平台" src="img/index/index-class3.png"/>
+	            	<p class="h3">微信</p>
+	            </figure>
+	            
+	            <figure>
+	            	<img alt="电商网站" src="img/index/index-class4.png"/> 
+	            	<p class="h3">微博</p>
+	            </figure>
+	        </div>
+	        
+	        <div class="fl col_2">
+	            <div class="tree_1 fl">
+	                <div class=tree_2></div>
+	                <div class=tree_2></div>
+	                <div class=tree_2></div>
+	                <div class="tree_2 no_margin"></div>
+	            </div>
+	            <div class="tree_3 fl">
+	            	<span>引流</span>
+	                <div class=arrow></div>
+	            </div>
+	        </div>
+	        
+	        <div class="fl col_3">
+	        	<img alt="卖东西的网站"  src="img/index/index-class5.png"/>
+	        </div>
+	        
+	        <div class="fl col_4">
+	            <div class="tree_3 fl">
+	            	<span>面向</span>
+	            </div>
+	            <div class="tree_1 fl">
+	                <div class=tree_2>
+	                    <div class=arrow></div>
+	                </div>
+	                <div class=tree_2>
+	                    <div class=arrow></div>
+	                </div>
+	                <div class="tree_2 no_margin">
+	                    <div class=arrow></div>
+	                </div>
+	            </div>
+	        </div>
+	        
+	        <div class="fl col_5">
+	            <figure>
+	            	<img alt="移动电商" src="img/index/index-class6.png" style="width:61px;height:68px"/>
+	                <p class="h3">时髦女性</p>
+	            </figure>
+	            <figure>
+	            	<img alt="海外代购网站" src="img/index/index-class7.png" style="width:66px;height:81px"/>
+	                <p class="h3">时尚达人</p>
+	            </figure>
+	            <figure>
+	            	<img alt="直播电商" src="img/index/index-class8.png" style="width:75px;height:84px"/>
+	                <p class="h3">潮流白领</p>
+	            </figure>
+	        </div>
+	        
+	    </div>
+	    
+	    <!--完美的视频直播呈现-->
+	    <div class=index_block_5 id=videoContainer>
+	    	<p class="h1">完美的视频直播呈现</p>
+	        <p class="h6" class=f_gray>让购物体验更真实</p>
+	        <ul>
+	            <li>
+	            	<i class="i1 active"></i>
+	                <p class="h3">全景直播</p>
+	            </li>
+	            <li><i class=i2></i>
+	                <p class="h3">手机直播</p>
+	            </li>
+	            <li>
+	            	<i class=i3></i>
+	                <p class="h3">VR直播</p>
+	            </li>
+	        </ul>
+	        
+	        <div class="fl bg_left" id=canvasContainer>
+	            <div class="mes">
+	            	<img alt="网络视频直播平台" src="img/index/index-vlbg.png" />
+	            </div>
+	            <div class="show1 videoImg">
+	            	<img alt="新电商" src="img/index/index-vl1.png" />
+	                <p class="h3">360°全景直播摄像机</p>
+	            </div>
+	            <div class="show2 hide videoImg">
+	            	<img alt="购物直播" src="img/index/index-vl2.png" />
+	                <p class="h3">手机随时随地直播</p>
+	            </div>
+	            <div class="hide show3 videoImg">
+	            	<img alt=直播卖货  src="img/index/index-vl3.png" />
+	                <p class="h3">VR直播摄像机</p>
+	            </div>
+	        </div>
+	        
+	        <video class="fl bg_right" id=video autoplay muted>
+	            <source src="http://www.hongdoujiao.com/videos/index_v2.webm">
+	            <source src="http://www.hongdoujiao.com/videos/index_v2.mp4">
+	           	 您的浏览器不支持VIDEO标签
+	        </video>
+	        
+	        <video class="fl bg_right hide" id=video1 autoplay muted>
+	            <source src="http://www.hongdoujiao.com/videos/index_v1.webm">
+	            <source src="http://www.hongdoujiao.com/videos/index_v1.mp4">
+	         	 您的浏览器不支持VIDEO标签
+	        </video>
+	        
+	        <video class="fl bg_right hide" id=video2 autoplay muted>
+	            <source src="http://www.hongdoujiao.com/videos/index_v3.webm">
+	            <source src="http://www.hongdoujiao.com/videos/index_v3.mp4">
+	           	 您的浏览器不支持VIDEO标签
+	        </video>
+	    </div>
+	    
+	    <!--数十种促销工具-->
+	    <div class="index_block_6 comm_container"><p class="h1" animation=0.3>
+	    	<span>数十种促销工具</span> 
+	    	<span class=no_margin>助力店铺成交转换</span>
+	    </p>
+	        <p animation=0.6> 客户营销不仅仅只是打折促销 </p>
+	        <div class=pics animation=0.9>
+	            <figure>
+	                <div>
+	                	<img class=pic1 alt="购物app" src="img/index/index-tool1.png" width=132 height=132>
+	                </div>
+	                <p class="h3">代付</p>
+	            </figure>
+	            <figure>
+	                <div>
+	                	<img alt="直播app" src="img/index/index-tool2.png" width=132 height=132 />
+	                </div>
+	                <p class="h3">送礼</p>
+	            </figure>
+	            <figure>
+	                <div>
+	                	<img alt="微电商" class=pic3 src="img/index/index-tool3.png" width=132 height=132>
+	                </div>
+	                <p class="h3">优惠券</p>
+	            </figure>
+	            <figure>
+	                <div><img alt="红豆角直播" src="img/index/index-tool4.png" width=132 height=132></div>
+	                <p class="h3">小视频</p>
+	            </figure>
+	            <figure>
+	                <div><img alt="红豆角" src="img/index/index-tool5.png" width=132 height=132></div>
+	                <p class="h3">拼团</p>
+	            </figure>
+	        </div>
+	    </div>
+	    
+	    <!--直播开店-->
+	    <div class=index_block_7>
+	        <div class=mes></div>
+	        <p class="h1" animation=0.3>直播开店</p>
+	        <p class="h2" animation=0.6>让他们的创业梦更进一步</p> 
+	        <img alt="电商直播app" src="img/index/index-bgbot.png" />
+	    </div>
+	    
+	</div>
+	
+	<script id=liveList type=text/html>
+	    <dl>
+	        <dt>
+	            <a href="/liveManager.html?spaceId={{top.spaceId}}&liveId={{top.liveInfoes.liveId}}">
+	                <figure>
+	                    <img alt="海外代购" src="{{top.liveInfoes.userHeadUrl}}" alt="">
+	                    <div class="is_living">
+	                        <img src="img/index/living.gif" alt="电商网站">{{top.liveAudiences}}
+	                    </div>
+	                </figure>
+	                <h4 class="ellipsis">{{top.liveInfoes.liveTitle}}</h4>
+	                <div class="username ellipsis">
+	                	<img src="{{top.liveInfoes.userHeadUrl}}" alt="电商网站">{{top.spaceName}}
+	                </div>
+	            </a>
+	        </dt>
+	        {{each list as live i}}
+	        <dd>
+	            <a href="/liveManager.html?spaceId={{live.spaceId}}&liveId={{live.liveInfoes.liveId}}">
+	                <figure>
+	                    <img alt="电商平台" src="{{live.userHeadUrl}}" alt="">
+	                    <div class="is_living">
+	                        <img src="img/index/living.gif" alt="电商网站">{{live.liveAudiences}}
+	                    </div>
+	                </figure>
+	                <h4 class="ellipsis">{{live.liveInfoes.liveTitle}}</h4>
+	                <div class="username ellipsis">
+	                	<img src="{{live.userHeadUrl}}" alt="电商网站">{{live.spaceName}}
+	                </div>
+	            </a>
+	        </dd>
+	        {{/each}}
+	    </dl> 
+	</script>
+	
+	<!--底部-->
+	<div class="foot"></div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		   $(".foot").load("footer.html");
+		});
+	</script>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script src="js/swiper.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
+

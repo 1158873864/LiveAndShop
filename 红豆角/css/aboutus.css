@@ -1,0 +1,139 @@
+.About_banner {
+    width: 100%;
+    height: 580px;
+    background: url(../img/aboutus/About_bg-35038933.png) no-repeat 50%
+}
+
+.company_int, .company_tec {
+    width: 1000px;
+    margin: 0 auto
+}
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 61px;
+    margin-bottom: 42px
+}
+
+.h2_title, .title {
+    text-align: center
+}
+
+.h2_title {
+    font-size: 40px;
+    margin-bottom: 39px
+}
+
+.h3_title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px
+}
+
+.h4_title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px
+}
+
+.int {
+    width: 778px;
+    padding-top: 7px;
+    margin: 0 auto 50px;
+    position: relative
+}
+
+.int_text {
+    background: #f3f3f3;
+    padding: 22px;
+    width: 250px
+}
+
+.int_show > h5, .int_text > h5 {
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 20px
+}
+
+.int_show > p, .int_text > p {
+    font-size: 10px;
+    line-height: 18px
+}
+
+.int_box {
+    margin-right: 14px;
+    margin-bottom: 14px
+}
+
+.int_show {
+    width: 257px;
+    background: #f3f3f3;
+    padding: 43px 29px 26px
+}
+
+.int_live {
+    position: absolute;
+    right: 0;
+    top: 7px
+}
+
+.int_live > .int_text {
+    padding: 27px
+}
+
+.company_bus {
+    background: #2db1ef;
+    border: 1px solid transparent
+}
+
+.bus_box {
+    width: 1000px;
+    height: 402px;
+    margin: 0 auto
+}
+
+
+
+.bus_box > div {
+    width: 485px;
+    height: 330px;
+    background: #42b9f1
+}
+
+.bus_box .h3_title {
+    color: #fff
+}
+
+.bus_show {
+    padding: 60px
+}
+
+.bus_show2 {
+    padding: 47px;
+    padding-top: 60px
+}
+
+.bus_show2 > p, .bus_show > p {
+    font-size: 20px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center
+}
+
+.company_tec {
+    height: 700px
+}
+
+.company_tec > img {
+    margin: 44px auto 0
+}
+
+.agency {
+    background: #000
+}
+.title {
+    color: #fff
+}
+.company_tec .title{
+    color: #000
+}

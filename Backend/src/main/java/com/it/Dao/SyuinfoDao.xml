@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.it.Dao.SyuinfoDao">
+
+    <select id="findById" parameterType="String" resultType="com.it.bean.Syuinfo">
+      select * from syuinfo where stu_id=#{id}
+    </select>
+    
+    <insert id="insertSyu" parameterType="com.it.bean.Syuinfo">
+       insert into syuinfo(stu_id,stu_name,stu_birth,stu_pwd) values(#{stu_id},#{stu_name},#{stu_birth},#{stu_pwd})   
+    </insert>
+    
+    
+    <!-- 这是从红豆角得编程
+    
+            修改写一起，防止代码冗余
+     -->
+   <update id="upadateUser"  parameterType="com.it.bean.UserMassege">
+       update UserMassege
+      <trim prefix="set" suffixOverrides=",">
+        <if test="Username!=null">Username=#{Username},</if>
+        <if test="Usersex!=null">Usersex=#{Usersex},</if>
+        <if test="Photonumble!=null">Photonumble=#{Photonumble},</if>
+        <if test="Signature!=null">Signature=#{Signature},</if>
+        <if test="Concern!=null">Concern=#{Concern},</if>
+        <if test="Fans!=null">Fans=#{Fans},</if>
+      </trim>
+       where Userid=#{Userid}
+   </update>
+    
+    <select id="findByUserID" parameterType="String" resultType="com.it.bean.UserMassege"> 
+     select * from UserMassege where Userid=#{Userid}
+    </select>
+    
+    <!-- 用于用户修改，查询出之后返回文本框 -->
+    <select id="findAll" parameterType="String" resultType="com.it.bean.UserMassege"> 
+     select * from UserMassege ;
+    </select>
+    
+    
+    <!-- 数据库自增主键 保证安全性，java中直接调用数据库得主键-->
+     <insert id="InsertUser" parameterType="com.it.bean.UserMassege">
+         <selectKey keyProperty="Userid" order="BEFORE" resultType="java.lang.String">
+         SELECT uuid();
+         </selectKey>
+         insert into UserMassege(Userid,Username,Usersex,Phonenumble,Signature,Concern,Fans) values(#{Userid},#{Username},#{Usersex},#{Phonenumble},#{Signature},#{Concern},#{Fans});
+      </insert>
+     
+     <!-- 查询关注和粉丝数量 -->
+     <select id="QueryConcernAndFans" parameterType="String" resultType="com.it.bean.UserMassege">
+     select fans,Concern from UserMassege where UserId = #{UserId}
+     </select>
+    
+     <!-- 查询关注姓名 -->
+     <select id="QueryConceryName" parameterType="String" resultType="com.it.bean.UserMassege">
+     select * from (select Userid,Concernid from User where Userid =#{UserId}) c JOIN UserMassege b
+     on c.Concernid=b.UserId
+     </select>
+    
+     <!-- 查询粉丝姓名-->
+     <select id="QueryFansName" parameterType="String" resultType="com.it.bean.UserMassege">
+     select * from (select Userid,Fansid from User where Userid =#{UserId}) c JOIN UserMassege b
+     on c.Fansid=b.UserId
+     </select>
+     
+     <!-- 加入订单明细表 -->
+     <insert id="AddOrderMXTable" parameterType="com.it.bean.Order_MX">
+     insert into Order_MX(mx_id,od_id,sp_id,shuliang)values(#{mx_id},#{od_id},#{sp_id},#{shuliang});
+     </insert>
+     
+     <!-- 加入订单表 -->
+     <insert id="AddOrderTable" parameterType="com.it.bean.Orderinfo">
+     insert into Orderinfo(Od_id,Userid,total)values(#{Od_id},#{Userid},#{total})
+     </insert>
+     
+     <!-- 加入订单追踪表 -->
+     <insert id="AddOrderOrderZZTable" parameterType="com.it.bean.OrderZZ">
+     insert into OrderZZ(ZZ_id,od_id,statm,time)values(#{ZZ_id},#{od_id},#{statm},#{time});
+     </insert>
+    
+     <!-- 查询购物车得全部商品 -->
+     <select id="QueryAllWareinfo" resultType="com.it.bean.Wareinfo">
+      select * from Wareinfo;
+     </select>
+    
+     <!-- 通过商品ID查询商品信息 -->
+     <select id="QueryWareByID" parameterType="String" resultType="com.it.bean.Wareinfo">
+     select Ware_id from Wareinfo where Ware_id=#{Ware_id};
+     </select>
+     
+     <!-- 查询全部得商品 -->
+     <select id="QueryAllshangpin" parameterType="String" resultType="com.it.bean.Shangpininfo">
+     select * from shandpininfo;
+     </select> 
+     
+     <!-- 通过商品得ID来查询商品 -->
+     <select id="QuerySpbySpID" parameterType="String" resultType="com.it.bean.Shangpininfo">
+     select * from shandpininfo where sp_id=#{sp_id};
+     </select>
+     
+     <!--模糊搜索,类似百度得一个文本框搜索所有得值 -->
+     <select id="Multiplesearch" parameterType="java.util.Map" resultType="com.it.bean.Shangpininfo" >
+     select * from shandpininfo where sp_id like '%${value}%' or sp_name like '%${value}%' or sp_price like '%${value}%' or tp_id like '%${value}%' or sp_jieshao like '%"${value}%'
+     </select> 
+     
+     <!--相当于两个文本框搜索一个值-->
+     <select id="Multiconditionalsearchone" parameterType="java.util.Map"  resultType="com.it.bean.Shop">
+     select * from shop where Dp_id like '%${value}%'or Dp_name like '%${value}%' or Dp_introduce like '%${value}%' or Dp_propert like '%${value}%' or Dp_fans like '%"${value}%' or volume like '%"${value}%'
+     </select>
+     
+     <!--相当于多个文本框搜索一个值 预留接口-->
+     <!-- <select id="Multiconditionalsearchone"  resultType="com.it.bean.Shop" parameterType="String">
+          select * from shop where 1=1
+          <if test="Dp_id!=null">
+          and Dp_id=#{Dp_id}
+          </if>
+          <if test="Dp_name!=null">
+          and Dp_name=#{Dp_name}
+          </if>
+          <if test="Dp_introduce!=null">
+          and Dp_introduce=#{Dp_introduce}
+          </if>
+          <if test="Dp_propert!=null">
+          and Dp_propert=#{Dp_propert}
+          </if>
+          <if test="Dp_fans!=null">
+          and Dp_fans=#{Dp_fans}
+          </if>
+          <if test="volume!=null">
+          and volume=#{volume}
+          </if>
+          </select>      -->
+      
+     <!-- 查询你所有的省 -->
+     <select id="QueryAllProvince" parameterType="String" resultType="com.it.bean.Province">
+     select provinceId,provinceName from Province;
+     </select>
+     
+     <!-- 通过省ID查询所有的市 -->
+     <select id="QueryAllCitrByProvinceID" parameterType="String" resultType="com.it.bean.City">
+     select cityId,cityName from City where provinceId=#{provinceId}
+     </select>
+     
+     <!--通过市的ID查找 -->     
+     <select id="QueryAllcountyByCityId" parameterType="String" resultType="com.it.bean.County">
+     select countyId,countyName from County where cityId=#{cityId}
+     </select>
+     
+     <!-- 通过分类字段来进行模糊搜索 -->
+     <select id="QueryShopByPropert" parameterType="String" resultType="com.it.bean.Shop">
+     select Dp_name,Dp_fans,Dp_volume from Shop where Dp_propert=#{Dp_propert};
+     </select>
+     
+     <!-- 查询全部店铺-->
+     <select id="QueryAllShop" resultType="com.it.bean.Shop"> 
+     select * from shop;
+     </select>
+      
+     <!-- 待发货,应该是多表 一对多查询-->
+     <select id="Querydeliver" resultType="com.it.bean.Shangpininfo" parameterType="String">
+     </select>
+     
+     <!-- 待收货 -->
+     <select id="Querygather" resultType="com.it.bean.Shangpininfo" parameterType="String">
+     </select>
+     
+</mapper>

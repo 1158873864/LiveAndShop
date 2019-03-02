@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta name=format-detection content="telephone=no" />
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>红豆角</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/product.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hdj.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			function IsPC() {
+				for(var e = navigator.userAgent, n = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"],
+						t = !0, o = 0; o < n.length; o++)
+					if(e.indexOf(n[o]) > 0) {
+						t = !1;
+						break
+					}
+				return t
+			}
+
+			IsPC() || (window.parent.location.href = "/HDJ_official_phone.html");
+			var _hmt = _hmt || [];
+			! function() {
+				var e = document.createElement("script");
+				e.src = "https://hm.baidu.com/hm.js?8a846d1ce36020ef5fecba4bf355fa06";
+				var n = document.getElementsByTagName("script")[0];
+				n.parentNode.insertBefore(e, n)
+			}();
+			var BASE_URL = "http://api.home.hongdoujiao.com"
+		</script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div class="head"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".head").load("header.html");
+			});
+		</script>
+		
+		<div class=product_show>
+		    <div class=appli_banner>
+		        <div>
+		            <div class=fr><div class="h1">直播电商+店商</div>
+		                <div class="h3">小门店&nbsp;&nbsp;大生意</div>
+		                <div class="h3">商家随时随地做生意&nbsp;&nbsp;用户随时随地到"店"购物</div></div>
+		        </div>
+		    </div>
+		    <div class=func_intro>
+		        <div class=comm_container><p class='product_title h1'>手机直播</p>
+		            <p class="product_title h3" class=f_gray>一部手机，一款红豆角，让你走到哪播到哪</p>
+		            <p class="product_title h3" class=f_gray>更多功能等你体验</p>
+		            <div class=appShow>
+		                <div class="col2 fl">
+		                    <img src="img/product/phone_mine.png" alt="">
+		                </div>
+		                <div class="col3 fl">
+		                    <p class="key4 h3"><img class="iconKey" src="img/product/phone1.png" alt=""><span>直播互动</span></p>
+		                    <p class="key5 h3"><img class="iconKey" src="img/product/phone2.png" alt=""><span>店铺管理</span></p>
+		                    <p class="key6 h3"><img class="iconKey" src="img/product/phone3.png" alt=""><span>商品管理</span></p>
+		                    <p class="key6 h3"><img class="iconKey" src="img/product/phone4.png" alt=""><span>订单管理</span></p>
+		                    <p class="key6 h3"><img class="iconKey" src="img/product/phone5.png" alt=""><span>店铺推广</span></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="live_harware comm_container">
+		        <p  class="product_title h1">VR直播</p>
+		        <p class="live_harware_title h3"><span>720°</span>完美取景，<span>24h</span>在线不打烊</p>
+		        <p class="live_harware_title h4">店铺一键管理，售后无忧</p>
+		        <ul>
+		            <li>实景体验</li>
+		            <li>边逛边买</li>
+		            <li>跨界营销</li>
+		            <li>商客联动</li>
+		            <li>无界浏览，新颖呈现</li>
+		        </ul>
+		        <figure class="VR_img1">
+		            <img src="img/product/VR1.png" alt="">
+		        </figure>
+		        <figure class="VR_img2">
+		            <img src="img/product/VR2.png" alt="">
+		        </figure>
+		        <figure class="VR_img3">
+		            <img src="img/product/VR3.png" alt="">
+		        </figure>
+		        <figure class="VR_img5">
+		            <img src="img/product/VR5.png" alt="">
+		        </figure>
+		        <figure class="VR_img4">
+		            <img src="img/product/VR4.png" alt="">
+		        </figure>
+		    </div>
+		    <div class=recommend>
+		        <p  class="product_title h1">全景直播</p>
+		        <div class="comm_container">
+		            <figure class="full_shot1">
+		                <img src="img/product/full_shot2.png" alt="">
+		            </figure>
+		            <figure class="full_shot2">
+		                <img src="img/product/full_shot1.png" alt="">
+		            </figure>
+		            <ul>
+		                <li><span>实体店+全景直播</span>完美演绎新零售</li>
+		                <li>随时随地看店做生意，让顾客随时随地到店购物</li>
+		                <li>专属智能全景直播摄像机</li>
+		                <li>7x24小时直播不间断</li>
+		                <li>360°随意旋转，可放大可缩小</li>
+		                <li>视频云存储，想看就看</li>
+		                <li>轻松实现线下实体店移动互联网化</li>
+		            </ul>
+		        </div>
+		    </div>
+		    <div class=live_change><p  class="product_title h1">全国首创直播场景切换</p>
+		        <p class=block_title> 直播不同场景可以任意切换 <br> 手机直播与全景直播完美融合，实现卖家与买家视频购物面对面交流 <br> 并观看真实场景，增加购物可信度，两不误 <br></p>
+		        <div class=pic_show>
+		            <div class=live_title> 手机直播与全景直播 <br> 完美切换</div>
+		            <div class=fl><img src=img/product/product_p32-1a885463.png></div>
+		            <div class=fr><img src=img/product/product_p33-32b43d25.png></div>
+		        </div>
+		        <div class=pics>
+		            <figure><img src=img/product/product_p35-816da7d3.png>
+		                <p class="h2"><span>店长</span><span>手机直播中</span></p></figure>
+		            <figure><img src=img/product/product_p36-e333514d.png>
+		                <p class="h2"><span>营业员</span><span>手机直播中</span></p></figure>
+		            <figure><img src=img/product/product_p37-344826df.png>
+		                <p class="h2"><span>专业买手</span><span>手机直播中</span></p></figure>
+		            <figure><img src=img/product/product_p1-889d52ae.png>
+		                <p class="h2"><span>实体店</span><span>全景直播中</span></p></figure>
+		            <figure><img src=img/product/product_p12-0b7dbea9.png>
+		                <p class="h2"><span>活动现场</span><span>全景直播中</span></p></figure>
+		            <figure><img src=img/product/product_p23-d600a26b.png>
+		                <p class="h2"><span>原产地</span><span>全景直播中</span></p></figure>
+		        </div>
+		    </div>
+		    <div class="apply_scene comm_container">
+		        <p  class="product_title h1">应用场景</p>
+		        <p class="product_title h3">———— <span style="font-size:30px;font-weight:400;">scene</span> ————</p>
+		        <ul>
+		            <li class="students_text text_commen">
+		                <p class="h1">学生</p>
+		                <p class="h2">学习创业都兼顾</p>
+		            </li>
+		            <li class="first_icon"><img src="img/product/scene10.png" alt=""></li>
+		            <li class="students_img"><img src="img/product/scene9.png" alt=""></li>
+		            <li class="baby_Mother_img"><img src="img/product/scene1.png" alt=""></li>
+		            <li class="baby_Mother_text text_commen">
+		                <p class="h1">宝妈</p>
+		                <p class="h2">家庭事业两不误</p>
+		            </li>
+		            <li class="second"><img src="img/product/scene10.png" alt=""></li>
+		            <li class="brand_text text_commen">
+		                <p class="h1">品牌连锁</p>
+		                <p class="h2">新款爆款秒上架</p>
+		            </li>
+		            <li class="brand_img"><img src="img/product/scene3.png" alt=""></li>
+		            <li class="third"><img src="img/product/scene4.png" alt=""></li>
+		            <li class="salaryman_text text_commen">
+		                <p class="h1">上班族</p>
+		                <p class="h2">副业比工资还高</p>
+		            </li>
+		            <li class="salaryman_img"><img src="img/product/scene5.png" alt=""></li>
+		            <li class="ShopNBC_img"><img src="img/product/scene6.png" alt=""></li>
+		            <li class="fourth"><img src="img/product/scene10.png" alt=""></li>
+		            <li class="ShopNBC_text text_commen">
+		                <p class="h1">实体店主</p>
+		                <p class="h2">线上线下生意一起做</p>
+		            </li>
+		            <li class="differential_text text_commen">
+		                <p class="h1">微商</p>
+		                <p class="h2">人脉还能变现金</p>
+		            </li>
+		            <li class="differential_img"><img src="img/product/scene7.png" alt=""></li>
+		            <li class="hot_text text_commen">
+		                <p class="h1">网红</p>
+		                <p class="h2">发挥优势 持久受益</p>
+		            </li>
+		            <li class="fifth"><img src="img/product/scene10.png" alt=""></li>
+		            <li class="hot_img"><img src="img/product/scene8.png" alt=""></li>
+		            <li class="goods_text text_commen">
+		                <p class="h1">工厂货源</p>
+		                <p class="h2">找货的人都在这里</p>
+		            </li>
+		            <li class="six"><img src="img/product/scene10.png" alt=""></li>
+		            <li class="goods_img"><img src="img/product/scene2.png" alt=""></li>
+		        </ul>
+		    </div>
+		</div>	
+		<!--底部-->
+		<div class="foot"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".foot").load("footer.html");
+			});
+		</script>
+	</body>
+</html>

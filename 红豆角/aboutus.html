@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+		<meta name=format-detection content="telephone=no" />
+		<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<title>红豆角</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/aboutus.css" />
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hdj.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			function IsPC() {
+				for(var e = navigator.userAgent, n = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"],
+						t = !0, o = 0; o < n.length; o++)
+					if(e.indexOf(n[o]) > 0) {
+						t = !1;
+						break
+					}
+				return t
+			}
+
+			IsPC() || (window.parent.location.href = "/HDJ_official_phone.html");
+			var _hmt = _hmt || [];
+			! function() {
+				var e = document.createElement("script");
+				e.src = "https://hm.baidu.com/hm.js?8a846d1ce36020ef5fecba4bf355fa06";
+				var n = document.getElementsByTagName("script")[0];
+				n.parentNode.insertBefore(e, n)
+			}();
+			var BASE_URL = "http://api.home.hongdoujiao.com"
+		</script>
+		
+		<script type="text/javascript">
+			function supportsImports() {
+			  return 'import' in document.createElement('link');
+			}
+			
+			if (supportsImports()) {
+			  console.log("支持导入")
+			} else {
+			   console.log("使用其他的库来加载文件") 
+			}
+		</script>
+	</head>
+	<body>
+		<!--头部导航-->
+		<div class="head"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".head").load("header.html");
+			});
+		</script>
+		
+		<div class=About_banner></div>
+		<div class=company_int><div class=title>中国电信创投孵化</div><div
+		            class=h4_title>历经两年时间由中国电信集团天翼创投孵化，于2016年7月成立公司</div> <div class=h4_title>并在杭州梦想小镇中国电信创新创业基地正式挂牌</div>
+		    <div class="int cf">
+		        <div>
+		            <div class="fl int_box"><img alt="海外代购" src=img/aboutus/About_p1-7de6866f.png>
+		                <div class=int_text><h5>正式挂牌</h5>
+		                    <p>视连时代（上海）信息科技有限公司于2016年6月28日在杭州梦想小镇中国电信创新创业基地（杭州）正式挂牌。</p></div>
+		            </div>
+		            <div class="fl int_box"><img alt="电商平台" src=img/aboutus/About_p2-8fc73e78.png>
+		                <div class=int_text><h5>接受采访</h5>
+		                    <p>视连时代（上海）信息科技有限公司CEO胡向礼接受记者采访，明确红豆角的未来发展战略。</p></div>
+		            </div>
+		            <div>
+		                <div class="fl int_show"><h5>揭牌仪式</h5>
+		                    <p>中国电信浙江分公司副经理陈华、中国电信浙江分公司创新部总经理管建中、天翼创投总经理张颉华及视连时代CEO胡向礼共同为公司揭牌。</p></div>
+		                <img alt="全民直播平台" src=img/aboutus/About_p4-adbae8b6.png class=fl/></div>
+		        </div>
+		        <div class=int_live><img alt="电商网站" src=img/aboutus/About_p3-546dd35f.png>
+		            <div class=int_text><h5>揭牌仪式</h5>
+		                <p>视连时代（上海）信息科技有限公司签约网红正在直播。</p></div>
+		        </div>
+		    </div>
+		</div>
+		<div class=company_bus>
+		    <div class=title>核心业务</div>
+		    <div class=bus_box>
+		        <div class="fl bus_show"><div class=h3_title>支持多种直播模式</div>
+		            <p>公司拥有自有知识产权的直播技术，能够提供手机、PC、iTV三屏同步的视频直播服务,能够实现手机直播、全景直播、VR直播、专业摄像机直播</p></div>
+		        <div class="fr bus_show2"><div class=h3_title>支持订制服务</div>
+		            <p>拥有领先的云计算技术和专业的视频处理经验，能够针对客户需求不断创新，向教育、零售、政府企业等领域的客户提供基于云计算的视频点播、直播、分发整体解决方案</p></div>
+		    </div>
+		</div>
+		<div class=company_tec><div class=title>技术团队</div> <div class=h4_title>拥有一支资深技术骨干团队</div> <div class=h4_title>
+		    包括系统架构师、C#、JAVA、iOS、Android、C/C++、HTML5、UI交互设计等专业技术人才</div> <img alt="卖东西的网站" src=img/aboutus/About_p5-129e5bad.png></div>
+		
+		<!--底部-->
+		<div class="foot"></div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			   $(".foot").load("footer.html");
+			});
+		</script>
+	</body>
+</html>

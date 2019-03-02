@@ -1,0 +1,170 @@
+.serBuy_banner {
+    width: 100%;
+    height: 580px;
+    background: url(../img/charge/buy_bg-58f5ae26.png) no-repeat 50%
+}
+
+.serBuy_box {
+    width: 1000px;
+    min-height: 1000px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+.serBuy_box .serBuy_title {
+    margin-top: 50px;
+    margin-bottom: 40px
+}
+
+.serBuy_box .serBuy_title .title_h1 {
+    font-size: 30px
+}
+
+.serBuy_box .serBuy_title .title_h3 {
+    font-size: 20px
+}
+
+.serBuy_box .economic,
+.serBuy_box .professional,
+.serBuy_box .enterprise{
+    width: 100%;
+    margin-top:21px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    overflow: hidden
+}
+.serBuy_box .economic table,
+.serBuy_box .professional table,
+.serBuy_box .enterprise table,{
+    width: 100%;
+    height: 396px;
+    border: 1px solid #EDEDED;
+    border-radius: 10px;
+    background: #fafafa;
+    margin-bottom: 20px;
+    overflow: hidden
+}
+.serBuy_box .economic table thead tr th,
+.serBuy_box .professional table thead tr th,
+.serBuy_box .enterprise table thead tr th{
+    height: 60px;
+    width: 176px;
+    font-size:20px;
+    color: #000000;
+    border-left: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+    background-color: #F3F3F3;
+}
+.serBuy_box .economic table tr th:first-child{
+    width: 119px;
+    background-color: #50C1CB;
+    position: relative;
+    border: 0;
+}
+.serBuy_box .economic table tbody tr th:first-child img,
+.serBuy_box .professional table tr th:first-child img,
+.serBuy_box .enterprise table tr th:first-child img{
+    width: 48px;
+    position: absolute;
+    top: 69px;
+    left: 50%;
+    margin-left: -24px;
+}
+.serBuy_box .economic table tbody tr th:first-child img{
+    top: 20px;
+}
+.serBuy_box .economic table tbody tr td,
+.serBuy_box .professional table tbody tr td,
+.serBuy_box .enterprise table tbody tr td{
+    border-right: 1px solid #EDEDED;
+    height: 241px
+}
+.serBuy_box .economic table tbody tr th:first-child>span,
+.serBuy_box .professional table tbody tr th:first-child>span,
+.serBuy_box .enterprise table tbody tr th:first-child>span{
+    color: #fff;
+    font-size:26px;
+    font-weight:800;
+    line-height:44px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.serBuy_box .economic table tbody tr th:first-child>span.vip,
+.serBuy_box .professional table tbody tr th:first-child>span.vip,
+.serBuy_box .enterprise table tbody tr th:first-child>span.vip{
+    top:120px;
+    left:0;
+}
+.serBuy_box .economic table tbody tr th:first-child>span.vip{
+    top: 75px;
+}
+.serBuy_box .economic table tbody tr th:first-child>span.money,
+.serBuy_box .professional table tbody tr th:first-child>span.money,
+.serBuy_box .enterprise table tbody tr th:first-child>span.money{
+    top:155px;
+    left:0;
+}
+.serBuy_box .economic table tbody tr th:first-child>span.money{
+    top:115px;
+}
+
+.serBuy_box .economic table tbody tr th:first-child span > span,
+.serBuy_box .professional table tbody tr th:first-child span > span,
+.serBuy_box .enterprise table tbody tr th:first-child span > span{
+    color: #fff;
+    font-size:18px;
+    font-weight:800;
+    line-height:44px;
+}
+.serBuy_box .economic table tbody tr td ul,
+.serBuy_box .professional table tbody tr td ul,
+.serBuy_box .enterprise table tbody tr td ul{
+    height: 100%;
+}
+.serBuy_box .economic table tbody tr td li,
+.serBuy_box .professional table tbody tr td li,
+.serBuy_box .enterprise table tbody tr td li{
+    font-size:18px;
+    line-height:60px;
+    padding-left: 10px;
+}
+.serBuy_box .economic table tbody tr td li s{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:#50C1CB;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.serBuy_box .professional table tr th:first-child{
+    width: 119px;
+    background-color: #E9A16C;
+    position: relative;
+    border: 0;
+}
+.serBuy_box .professional table tbody tr td li s{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:#E9A16C;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.serBuy_box .enterprise table tr th:first-child{
+    width: 119px;
+    background-color: #FFC23E;
+    position: relative;
+    border: 0;
+}
+.serBuy_box .enterprise table tbody tr td li s{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color:#FFC23E;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
